@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dente da Traíra · Matheus Alexandre — Pesca Esportiva</title>
+  <meta name="description" content="Mídia kit do Dente da Traíra, criador de conteúdo de pesca esportiva. Versão de demonstração do portfólio de Paulo Henrique." />
+  <!-- Demonstração: não indexar, para não competir com o site oficial no Google -->
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- 🔤 Fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- 🎨 CSS do site -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🌊 Fundo animado -->
+  <div class="ocean"></div>
+
+  <!-- ==========================================
+       📍 HEADER - Barra de navegação fixa
+       ========================================== -->
+  <header id="topo">
+    <div class="bar wrap">
+      <a href="#topo" class="logo">Dente<span>.</span>daTraíra</a>
+      <nav class="menu" id="menu">
+        <a href="#sobre">História</a>
+        <a href="#metricas">Métricas</a>
+        <a href="#criadouro">Criadouro</a>
+        <a href="#parceiros">Parceiros</a>
+        <a href="#loja">Loja</a>
+        <a href="#videos">Vídeos</a>
+        <a href="#" onclick="abrirDevSection(event)">Desenvolvedor</a>
+        <a href="#contato" class="btn">Fale comigo</a>
+        
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       🎯 HERO - Seção principal (MELHORADO)
+       ========================================== -->
+  <section class="hero wrap" id="inicio">
+
+    <!-- 🌊 Partículas decorativas de fundo (bolinhas flutuantes) -->
+    <div class="hero-particles" aria-hidden="true">
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+    </div>
+
+    <div class="hero-grid">
+
+      <!-- 📝 COLUNA ESQUERDA: texto, título, botões -->
+      <div class="hero-content">
+
+        <!-- 🏷️ Kicker: tag pequena acima do título -->
+        <span class="kicker reveal">Maior criador de pesca do Paraná</span>
+
+        <!-- 📌 Título principal -->
+        <h1 class="reveal">
+          Matheus<br>
+          Alexandre<br>
+          <span class="grad">Dente da Traíra</span>
+        </h1>
+
+        <!-- 📄 Parágrafo de descrição -->
+        <p class="lead reveal">
+          Criador de conteúdo em pesca esportiva com audiência altamente engajada
+          e foco em resultado real para marcas que valorizam autenticidade e autoridade.
+        </p>
+
+        <!-- 🔘 Botões de ação -->
+        <div class="cta-row reveal">
+          <a href="#contato" class="btn">🤝 Quero uma parceria</a>
+          <a href="#sobre" class="btn ghost">Conhecer a história →</a>
+        </div>
+
+        <!-- ✅ Bullets de diferenciais -->
+        <ul class="hero-points reveal">
+          <li>Base em Curitiba · viagens por todo o Brasil</li>
+          <li>Especialista em Pirarara, Tucunaré e pesca pesada</li>
+          <li>Vivência real: criação, manejo e prática contínua</li>
+        </ul>
+
+        <!-- 📊 Mini métricas rápidas abaixo dos bullets -->
+        <div class="hero-mini-stats reveal">
+          <div class="mini-stat">
+            <b id="hero-total">1,4 M+</b>
+            <small>seguidores totais</small>
+          </div>
+          <div class="mini-stat-sep"></div>
+          <div class="mini-stat">
+            <b>3</b>
+            <small>plataformas</small>
+          </div>
+          <div class="mini-stat-sep"></div>
+          <div class="mini-stat">
+            <b>2023</b>
+            <small>início do canal</small>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 🖼️ COLUNA DIREITA: foto + badge flutuante -->
+      <div class="hero-photo reveal">
+
+        <!-- Foto do Matheus -->
+        <img src="assets/perfil.jpg" alt="Matheus Alexandre — Dente da Traíra" />
+
+        <!-- 🏅 Badge de seguidores (canto inferior esquerdo) -->
+        <div class="float-badge">
+          <b id="hero-badge-num">363 mil</b>
+          <small>SEGUIDORES NO INSTAGRAM</small>
+        </div>
+
+        <!-- 🟢 Indicador de canal ativo (canto superior direito) -->
+        <div class="live-dot" aria-label="Canal ativo">
+          <span class="pulse"></span>
+          Canal ativo
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ⬇️ Indicador de scroll (some ao rolar) -->
+    <div class="scroll-hint" id="scrollHint" aria-hidden="true">
+      <span>Role para baixo</span>
+      <div class="arrow-down"></div>
+    </div>
+
+  </section>
+
+  <!-- ==========================================
+       📖 SOBRE - História
+       ========================================== -->
+  <section id="sobre" class="alt">
+    <div class="wrap about-grid">
+      <div>
+        <img src="assets/peixegrande.jpg" alt="Pirarara" style="width:100%;height:100%;object-fit:cover;border-radius:20px;" />
+      </div>
+      <div class="reveal">
+        <span class="kicker">Da curiosidade à autoridade</span>
+        <h2 style="font-size:clamp(2rem,4.5vw,3rem);margin-bottom:1.5rem;">A história</h2>
+        <p>Me chamo <strong>Matheus Alexandre</strong>, conhecido como <strong>Dente da Traíra</strong>. Comecei na internet em <strong>novembro de 2023</strong> sem pretensão comercial — apenas compartilhando a rotina de criação de peixes em casa.</p>
+        <br>
+        <p>Essa autenticidade atraiu um público apaixonado por <strong>pesca esportiva</strong>, criando uma audiência extremamente engajada e fiel. Hoje, produzo conteúdo prático, visual e repetível.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       📊 MÉTRICAS - Instagram, YouTube, TikTok
+       ========================================== -->
+  <section id="metricas">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Alcance comprovado</span>
+        <h2>Presença em múltiplas plataformas</h2>
+      </div>
+      <!-- Cards preenchidos pelo script.js -->
+      <div class="metrics-grid" id="metrics-container"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       🐠 CRIADOURO - Carrossel de fotos
+       ========================================== -->
+  <section id="criadouro">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">O lugar onde tudo vive</span>
+        <h2>Um ecossistema vivo com 38+ espécies</h2>
+      </div>
+      <div class="carrossel-container">
+        <button class="carrossel-btn prev" id="btnPrev" onclick="mudarFoto(-1)">‹</button>
+        <div class="carrossel-main">
+          <img id="carrosselImg" src="assets/pacugrande.jpg" alt="Ecossistema" class="reveal" />
+          <div class="carrossel-info">
+            <span class="carrossel-titulo" id="carrosselTitulo">Pacu Grande</span>
+            <span class="carrossel-contador"><span id="contadorAtual">1</span> / <span id="contadorTotal">8</span></span>
+          </div>
+        </div>
+        <button class="carrossel-btn next" id="btnNext" onclick="mudarFoto(1)">›</button>
+      </div>
+      <div class="carrossel-dots" id="carrosselDots"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       🏆 MAIORES CAPTURAS
+       ========================================== -->
+  <section id="maiores-capturas">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Recordes memoráveis</span>
+        <h2>As maiores capturas do Dente</h2>
+      </div>
+      
+      <div class="recordes-carrossel">
+        
+        <!-- CARD 1 - PIRARARA -->
+        <div class="recordes-card" id="recordes-card-1">
+          <img src="assets/peixegrande.jpg" alt="Pirarara 35.7kg" class="recordes-image" />
+          
+          <div class="recordes-content">
+            <div class="recordes-peixe">
+              <h3 class="recordes-peixe-nome">Pirarara</h3>
+              <div class="recordes-peixe-peso">35.7 kg</div>
+              <p class="recordes-peixe-local">Clube Pescar • Luziânia, GO</p>
+
+              <p class="recordes-curiosidades-titulo">Curiosidades:</p>
+              <ul class="recordes-curiosidades-lista">
+                <li>Maior peixe já pescado por Matheus</li>
+                <li>Força e resistência impressionantes</li>
+                <li>Predador de topo da espécie</li>
+                <li>Uma batalha inesquecível</li>
+                <li>Na foto veste <strong>Camiseta Koi Fishing Wear</strong></li>
+              </ul>
+
+              <a href="https://www.instagram.com/reel/DYqNGCDxWVQ/" target="_blank" rel="noopener" class="recordes-btn reveal">
+                🎥 Veja eu brigando com esse peixaço!
+              </a>
+            </div>
+          </div>
+        </div>
+
+        
+        <!-- CARD 2 - TAMBACU -->
+        <div class="recordes-card" id="recordes-card-2" style="display:none;">
+          <a href="https://www.instagram.com/p/DUmBwkiEd5Y/?img_index=1" target="_blank" rel="noopener" style="display:block; text-decoration:none;">
+            <img src="assets/009.jpg" alt="Tambacu 35.5kg" class="recordes-image" style="cursor:pointer; transition:.3s;" />
+          </a>
+          
+          <div class="recordes-content">
+            <div class="recordes-peixe">
+              <h3 class="recordes-peixe-nome">Tambacu</h3>
+              <div class="recordes-peixe-peso">35.5 kg</div>
+              <p class="recordes-peixe-local">Pesqueiro Taquari • São Roque, SP</p>
+
+              <p class="recordes-curiosidades-titulo">Curiosidades:</p>
+              <ul class="recordes-curiosidades-lista">
+                <li>Híbrido de Tambaqui e Pacu com força extraordinária</li>
+                <li>Excelente predador e lutador na água</li>
+                <li>Dentadura potente e resistência incomparável</li>
+                <li>Captura espetacular no Pesqueiro Taquari</li>
+                <li>Segunda maior captura documentada por <strong>Matheus</strong></li>
+              </ul>
+
+              <a href="https://www.instagram.com/p/DUmBwkiEd5Y/?img_index=1" target="_blank" rel="noopener" class="recordes-btn reveal">
+                📸 Veja essa captura espetacular!
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- NAVEGAÇÃO -->
+        <div class="recordes-nav reveal">
+          <button class="recordes-nav-btn" onclick="mudarRecordes(-1)">‹</button>
+          <div class="recordes-nav-counter">
+            <span id="recordesAtual">1</span> / <span id="recordesTotal">2</span>
+          </div>
+          <button class="recordes-nav-btn" onclick="mudarRecordes(1)">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ==========================================
+       🤝 PARCEIROS - Patrocinadores
+       ========================================== -->
+  <section id="parceiros" class="alt">
+    <div class="wrap">
+      <div class="section-head reveal" style="margin-inline:auto;text-align:center;">
+        <span class="kicker" style="justify-content:center;">Marcas que constroem o futuro conosco</span>
+        <h2>Parceiros</h2>
+      </div>
+      <!-- Preenchido pelo script.js -->
+      <div class="sponsors" id="lista-patrocinadores"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       🛍️ LOJA - Afiliados
+       ========================================== -->
+  <section id="loja">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Equipamentos que eu uso e recomendo</span>
+        <h2>A loja do Dente</h2>
+      </div>
+      <!-- Preenchido pelo script.js -->
+      <div class="affiliates" id="lista-afiliados"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       🎬 VÍDEOS - Instagram Embeds
+       ========================================== -->
+  <section id="videos" class="alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Promoções & Sorteios</span>
+        <h2>Vídeos em destaque</h2>
+      </div>
+      <!-- Preenchido pelo script.js -->
+      <div class="videos" id="lista-videos"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       📞 CONTATO - CTA Final
+       ========================================== -->
+  <section id="contato" class="alt">
+    <div class="wrap contact">
+      <span class="kicker reveal" style="justify-content:center;">Vamos construir algo grande</span>
+      <h2 class="big reveal">Bora fechar parceria?</h2>
+      <p class="reveal" style="color:var(--muted);max-width:50ch;margin:0 auto;">Não se trata só de visibilidade — é impacto.</p>
+      <div class="reveal" style="margin-top:2rem;">
+        <a href="mailto:matheusalealves@gmail.com" class="btn">matheusalealves@gmail.com</a>
+      </div>
+      <div class="socials reveal">
+        <a href="https://www.instagram.com/dentedatraira/" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com/@dentedatraira" target="_blank">YouTube</a>
+        <a href="https://www.tiktok.com/@dentedatraira" target="_blank">TikTok</a>
+        <a href="mailto:matheusalealves@gmail.com">E-mail</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       🏗️ DESENVOLVIDO POR — abre só ao clicar no menu
+       ========================================== -->
+  <div id="devModal" class="dev-modal" aria-hidden="true">
+    <div class="dev-modal-overlay" onclick="fecharDevSection()"></div>
+    <div class="dev-modal-panel">
+      <button class="dev-modal-close" onclick="fecharDevSection()" aria-label="Fechar">✕</button>
+      <div class="dev-modal-body">
+        <div class="dev-logo-big" aria-hidden="true" style="display:grid;place-items:center;font-size:2rem;font-weight:800;color:var(--aqua);">PH</div>
+        <div class="dev-info">
+          <span class="kicker" style="justify-content:center;">Projeto de demonstração</span>
+          <h2>Paulo Henrique</h2>
+          <p>Desenvolvedor de Software. Este site foi criado para um criador de conteúdo real e está publicado aqui como demonstração, com autorização.</p>
+          <p style="margin-top:.8rem;">Gostou? Fale com Paulo Henrique, desenvolvedor deste site, para criar um sob medida para o seu negócio!</p>
+        </div>
+        <div class="dev-contact">
+          <a href="https://paulohenrique-dev.vercel.app/#contato" target="_blank" rel="noopener noreferrer">💬 Falar com o desenvolvedor</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔗 FOOTER -->
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="footer-main">
+        <span class="footer-copy">© <span id="ano"></span> Dente da Traíra</span>
+        <span class="footer-sep">·</span>
+        <span class="footer-dev-label">Projeto desenvolvido para demonstração · Paulo Henrique · Desenvolvedor de Software</span>
+      </div>
+    </div>
+  </footer>
+
+ 
+  <script src="script.js?v=2"></script>
+
+</body>
+</html>
